@@ -8,6 +8,11 @@ export default function CenterBar() {
             <Stories />
             <Post />
             <PostFeed />
+            <PostFeed />
+            <PostFeed />
+            <Stories />
+            <PostFeed />
+            <PostFeed />
         </div>
     )
 }
