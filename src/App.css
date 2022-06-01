@@ -1,38 +1,354 @@
-.App {
+@import "./DarkMode.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+
+
+}
+
+Body {
+  background: var(--b-g);
+}
+
+
+
+
+
+/*Header*/
+
+.header {
+  background-color: var(--bg-header);
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.headerLeft {
+  width: 20%;
+  display: flex;
+}
+
+.logo{
+  width:133px;
+  height:70px; 
+}
+
+.logoSrc {
+  max-height:100%;
+  content: var(--logo-src);
+}
+
+.headerRight {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+/*Switch dark theme*/
+
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.toggle-theme {
+  cursor: pointer;
+  width: 52px;
+  height: 27px;
+  background: rgb(10, 10, 10);
+  float: right;
+  border-radius: 100px;
+  position: relative;
+}
+
+.toggle-theme::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background: url(./Assets/light.svg);
+  background-size: cover;
+  border-radius: 90px;
+  transition: 0.5s;
+}
+
+input:checked+.toggle-theme {
+  background-color: rgb(199, 199, 199);
+}
+
+input:checked+label::after {
+  background: url(./Assets/night.svg);
+  background-size: cover;
+  left: calc(100% - 5px);
+  transform: translateX(-100%)
+}
+
+.toggle-theme:active:after {
+  width: 45px
+}
+
+
+
+
+/*Stories cards*/
+
+.wrapper {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.wrapper section {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  margin-top: 20px;
+  margin-top: 10px;
+
+}
+
+.item {
+  position: relative;
   text-align: center;
+  color: white;
+  width: 150px;
+  height: 267px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.storie {
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+  object-fit: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.wrapper section .item {
+  margin-left: 10px;
+  transition: 200ms all;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper section .item:hover {
+
+  transform: scale(1.02);
+}
+
+.wrapper section a {
+  margin-top: 20px;
+
+  position: absolute;
+  text-decoration: none;
+  font-size: 6em;
+  width: 7rem;
+  text-align: center;
+  z-index: 2;
+}
+
+.wrapper section a:nth-of-type(1) {
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.wrapper section a:nth-of-type(2) {
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 3%;
+  left: 5%;
+}
+
+.stories-card-foto {
+  margin: 5%;
+  width: 50px;
+  height: 50px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #4287f5;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  box-shadow: black 0.1em 0.1em 0.5em 0.1em;
+  transition: transform .5s;
+}
+
+.stories-card-foto:hover {
+  transform: scale(1.1);
+}
+
+.stories-card p {
+  color: #e6e6e6;
+  font-size: 15px;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  transition: transform .5s;
+}
+
+.stories-card p:hover {
+  transform: scale(1.02);
+}
+
+
+
+
+/*Grid do feed*/
+
+.grid {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+
+.leftBar {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.centerBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rightBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+
+
+
+/*Post Card*/
+
+.post {
+  margin-top: 10px;
+
+  background: var(--bg-card);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--border-color);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.postFeed {
+  margin-top: 10px;
+  background: var(--bg-card);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--border-color);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userBlockROW {
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.userBlockCOLLUM {
+  width: 90%;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.textBox {
+  margin: 5px;
+}
+
+.infoPost {
+  margin: 0px;
+  padding: 0px;
+}
+
+.buttonPost {
+  padding-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+/*Postados*/
+
+.conteudoDaPostagem {
+  width: 100%;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.midiaDaPostagem {
+  margin-top: 20px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 500px;
+}
+
+.reacoesDaPostagem {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.curtidasDaPostagem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.like {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dlike {
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.curtidasDaPostagem p {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.comentariosDaPostagem {
+  cursor: pointer;
+}
+
+
