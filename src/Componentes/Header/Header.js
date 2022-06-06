@@ -1,6 +1,5 @@
 import DarkMode from '../DarkMode.tsx'
 import IconButton from '@mui/material/IconButton';
-import SearchIcon from '@mui/icons-material/Search';
 import ForumIcon from '@mui/icons-material/Forum';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp';
