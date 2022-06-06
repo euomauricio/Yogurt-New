@@ -28,7 +28,7 @@ export default function Header() {
                     <NotificationsActiveIcon fontSize="large" alt="notifications" className="SVG" id="notifySVG"></NotificationsActiveIcon>
                 </IconButton>
 
-                <IconButton href="#link">
+                <IconButton href="./Profile.js">
                     <AccountCircleSharpIcon fontSize="large" alt="profile" className="SVG" id="userSVG"></AccountCircleSharpIcon>
                 </IconButton>
 

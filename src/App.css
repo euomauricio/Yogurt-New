@@ -206,7 +206,6 @@ input:checked+label::after {
 
 
 
-
 /*Grid do feed*/
 
 .grid {
@@ -352,3 +351,79 @@ input:checked+label::after {
 }
 
 
+
+
+/* PROFILE */
+
+.profile {
+  margin: 30px 25% 0% 15% ;
+
+}
+
+.bio {
+  margin-bottom: 15px;
+  padding: 20px;
+
+  height: 40vh;
+
+  display: flex;
+  flex-direction: row;
+}
+
+
+.imageBio {
+  background-image: url(https://res.cloudinary.com/dte7upwcr/image/upload/v1625827167/blog/blog2/melhorar-qualidade-de-imagem/melhorar-qualidade-de-imagem-foto-profissional.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.textBio {
+  margin-left: 45px;
+  width: 80%;
+}
+
+.names {
+  height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.nickName{
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+
+.btnConnect {
+  background-color: var(--color-buttonConect);
+  height: 40px;
+
+}
+
+.btnConnect:hover {
+  filter: brightness(80%);
+}
+
+.btnConfig {
+  background-image: url(./Assets/settings.jpg);
+  background-position: center;
+  background-size: contain;
+
+  filter: var(--filter-buttonSettings);
+
+  width: 35px;
+  height: 35px;
+
+  display: none;
+}
+
+.btnConfig:hover {
+  cursor: pointer;
+}

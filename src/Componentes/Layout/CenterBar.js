@@ -5,7 +5,6 @@ import Stories from '../Stories'
 export default function CenterBar() {
     return (
         <div className="centerBar">
-            <Stories />
             <Post />
             <PostFeed />
             <PostFeed />

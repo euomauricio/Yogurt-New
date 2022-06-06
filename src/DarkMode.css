@@ -21,6 +21,7 @@
   --color-paragraph: #260216;
   --color-details: #C8D948;
   --color-button: #6FC5D2;
+  --color-buttonConect: #6fd2b4cc;
   --logo-src: url("./Assets/Logo.png");
 
 
@@ -28,15 +29,17 @@
 
 /* 2 */
 [data-theme="dark"] {
-  --b-g: #10001C;
-  --bg-card: #6700B5;
+  --b-g: #12031d;
+  --bg-card: #674496;
   --border-color: lightgray;
-  --bg-header: #420075;
+  --bg-header: #523579;
   --color-text: #F2E0DF;
   --color-paragraph: #ebebeb;
   --color-details: #F22E2E;
-  --color-button: #C8D948;
+  --color-button: #61339c;
+  --color-buttonConect: #b99051;
   --logo-src: url("./Assets/LogoDark.png");
+  --filter-buttonSettings: invert(100%);
 }
 
 /* 3 */
