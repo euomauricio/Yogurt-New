@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.display-flex {
+    
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;  
+    
+}
+
+#content{
+    width: 450px;
+    height: 650px;
+    background-color: rgb(255, 212, 239); 
+    margin: 0 0 10px;
+    padding: 10px 0;
+             
+}
+
+input{
+    
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(252, 252, 252);
+    width: 60%;
+    height: 6%;
+    color: black;
+    border-radius: 5px;
+      
+}
+
+label{
+  font-size: small;
+  color: black;
+  
+}
+
+button{
+  background-color: rgb(248, 209, 215);
+  width: 60%;
+  height: 6%;
+  
+  color: black;
+  border-radius: 7px;
+  font-size: large;
+  cursor: pointer;
+}
+
+a{
+  font-size:large;
+  color:brown;
+}
+
+h4{ 
+  color: rgb(44, 43, 43);
+  font-family: 'Nunito', sans-serif;
+}
+
+#cadastro{
+  
+  width: 450px;
+  height: 100px;
+  background-color: rgb(255, 212, 239);  
+  justify-content: center;
+  flex-direction: row;
+  color: rgb(68, 65, 65);
+  font-family: 'Nunito', sans-serif;
+}
+
+img{
+  width: 50%;
+  height: 20% ;
+}
+
+#texto{
+  color: black;
+  
+}
+
+#senha2{
+    width: 350px;
+    height: 450px;
+    background-color: rgb(255, 212, 239); 
+    margin: 0 0 10px;
+    padding: 10px 0;
+    align-items: center;
+    
+   
+
+}
