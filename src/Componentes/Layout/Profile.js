@@ -1,4 +1,5 @@
-import CenterBar from './CenterBar'
+import Post from '../PostAPost'
+import PostFeed from '../PostFeed'
 import Bio from '../Bio'
 
 export default function Profile() {
@@ -7,7 +8,8 @@ export default function Profile() {
             <Bio />
             <hr/>
             <br/>
-            <CenterBar />
+            <Post />
+            <PostFeed />
         </div>
     )
 }

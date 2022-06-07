@@ -15,7 +15,7 @@
   /*Light*/
   --b-g: #ebebeb;
   --bg-card: #fff;
-  --border-color: lightgray;
+  --border-color: rgb(221, 221, 221);
   --bg-header: #F24B78;
   --color-text: #262223;
   --color-paragraph: #260216;
@@ -29,15 +29,15 @@
 
 /* 2 */
 [data-theme="dark"] {
-  --b-g: #12031d;
+  --b-g: #1f0831;
   --bg-card: #674496;
-  --border-color: lightgray;
+  --border-color: #575656;
   --bg-header: #523579;
   --color-text: #F2E0DF;
   --color-paragraph: #ebebeb;
   --color-details: #F22E2E;
   --color-button: #61339c;
-  --color-buttonConect: #b99051;
+  --color-buttonConect: #c9c75d;
   --logo-src: url("./Assets/LogoDark.png");
   --filter-buttonSettings: invert(100%);
 }

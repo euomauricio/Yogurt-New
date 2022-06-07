@@ -16,6 +16,7 @@ export default function FeedPost() {
 
 
     return (
+        
         <div className="postFeed">
             <div className="userBlockCOLLUM">
                 <div className="userBlockROW">

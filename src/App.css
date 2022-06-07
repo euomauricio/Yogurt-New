@@ -240,9 +240,7 @@ input:checked+label::after {
   margin-top: 10px;
 
   background: var(--bg-card);
-  border-width: 1px;
-  border-style: solid;
-  border-color: var(--border-color);
+  box-shadow: 0 0 5px var(--border-color);
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -251,9 +249,7 @@ input:checked+label::after {
 .postFeed {
   margin-top: 10px;
   background: var(--bg-card);
-  border-width: 1px;
-  border-style: solid;
-  border-color: var(--border-color);
+  box-shadow: 0 0 5px var(--border-color);
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -368,6 +364,10 @@ input:checked+label::after {
 
   display: flex;
   flex-direction: row;
+
+  background: var(--bg-card);
+  box-shadow: 0 0 5px var(--border-color);
+  border-radius: 10px;
 }
 
 
@@ -388,7 +388,7 @@ input:checked+label::after {
 }
 
 .names {
-  height: 100px;
+  height: 110px;
 
   display: flex;
   flex-direction: column;
