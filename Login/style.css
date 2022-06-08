@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Balsamiq+Sans&family=Comfortaa:wght@300&family=Courgette&family=Grape+Nuts&family=Hubballi&family=Inter:wght@100;200;300&family=Oswald:wght@200&family=Roboto:wght@100&family=Rock+Salt&family=Send+Flowers&family=Source+Sans+Pro:wght@200&display=swap');
 
 *{
     padding: 0px;
     margin: 0px;
 }
 
-.display-flex {
-    
+.display-flex {   
     justify-content: space-evenly;
     align-items: center;
     display: flex;
     flex-direction: column;
+    font-family: 'Inter', sans-serif;
 }
 
 #container{
@@ -20,8 +20,7 @@
     display: flex;
     align-items: center;
     justify-content:center;
-    flex-direction: column;  
-    
+    flex-direction: column;     
 }
 
 #content{
@@ -29,37 +28,47 @@
     height: 650px;
     background-color: rgb(255, 212, 239); 
     margin: 0 0 10px;
-    padding: 10px 0;
-             
+    padding: 10px 0;            
 }
 
-input{
-    
+input{    
     align-items: center;
     justify-content: center;
     background-color:rgb(252, 252, 252);
     width: 60%;
     height: 6%;
     color: black;
-    border-radius: 5px;
-      
+    border-radius: 5px;    
 }
 
 label{
   font-size: small;
-  color: black;
-  
+  color: black; 
 }
 
-button{
-  background-color: rgb(248, 209, 215);
+button {
   width: 60%;
-  height: 6%;
-  
-  color: black;
-  border-radius: 7px;
-  font-size: large;
+  height: 5%;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #ff266e;
+  background: transparent;
   cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #424242;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #ffb2e8;
+}
+
+button:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #ff78cb;
+}
+
+button:active {
+  transform: scale(0.9);
 }
 
 a{
@@ -69,18 +78,18 @@ a{
 
 h4{ 
   color: rgb(44, 43, 43);
-  font-family: 'Nunito', sans-serif;
+}
+h3{
+  color: rgb(44, 43, 43);
 }
 
 #cadastro{
-  
   width: 450px;
   height: 100px;
   background-color: rgb(255, 212, 239);  
   justify-content: center;
   flex-direction: row;
   color: rgb(68, 65, 65);
-  font-family: 'Nunito', sans-serif;
 }
 
 img{
@@ -90,17 +99,13 @@ img{
 
 #texto{
   color: black;
-  
 }
 
 #senha2{
     width: 350px;
-    height: 450px;
+    height: 550px;
     background-color: rgb(255, 212, 239); 
     margin: 0 0 10px;
     padding: 10px 0;
-    align-items: center;
-    
-   
-
+    align-items: center;    
 }
