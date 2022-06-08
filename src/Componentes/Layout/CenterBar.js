@@ -12,19 +12,18 @@ export default function CenterBar() {
     const [publications, setPublications] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/publications?_embed=arquivos').then((response) => {
+        axios.get('http://localhost:5000/publications').then((response) => {
             setPublications(response.data);
         });
     }, []);
-
     return (
         <div className="centerBar">
-            <Stories />
             <Post />
             {publications.map((publication) => (
-            <PostFeed publication={publication} />
-            ))}
+                <PostFeed publication={publication} />
 
+
+            ))}
         </div>
     )
 }

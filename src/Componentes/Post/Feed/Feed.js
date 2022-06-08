@@ -13,9 +13,7 @@ export default function PostFeed({publication}) {
 
     let nome = "Nome do Mandrião"
     let data = "25/03/2002"
-
-
-
+    console.log(publication)
 
     return (
         <div className="postFeed">
@@ -34,7 +32,7 @@ export default function PostFeed({publication}) {
                         <p>{publication.legenda}</p>
                     </div>
                     <div className="midiaDaPostagem">
-                          <img src={publication.conteudo} />
+                          <img src={publication.arquivos[0]?.conteudo} />
                     </div>
                     <div className="reacoesDaPostagem">
                         <div className="curtidasDaPostagem">
