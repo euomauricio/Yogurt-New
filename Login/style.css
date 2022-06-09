@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Balsamiq+Sans&family=Comfortaa:wght@300&family=Courgette&family=Grape+Nuts&family=Hubballi&family=Inter:wght@100;200;300&family=Oswald:wght@200&family=Roboto:wght@100&family=Rock+Salt&family=Send+Flowers&family=Source+Sans+Pro:wght@200&display=swap');
+@import "../src/DarkMode.css";
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.display-flex {   
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--b-g);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;     
+}
+
+#content{
+    width: 450px;
+    height: 750px;
+    background-color: var(--bg-header); 
+    margin: 0 0 10px;
+    padding: 10px 0;            
+}
+
+input{    
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(252, 252, 252);
+    width: 60%;
+    height: 5%;
+    color: black;
+    border-radius: 5px;    
+}
+
+label{
+  font-size: small;
+  color: black; 
+}
+
+/* button {
+  width: 60%;
+  height: 5%;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #ff266e;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #424242;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #ffb2e8;
+}
+
+button:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #ff78cb;
+}
+
+button:active {
+  transform: scale(0.9);
+} */
+
+a{
+  font-size:large;
+  color:brown;
+}
+
+h4{ 
+  color: rgb(44, 43, 43);
+}
+h3{
+  color: rgb(44, 43, 43);
+}
+
+#cadastro{
+  width: 450px;
+  height: 100px;
+  background-color: var(--bg-header);  
+  justify-content: center;
+  flex-direction: row;
+  color: rgb(68, 65, 65);
+}
+
+img{
+  width: 50%;
+  height: 20% ;
+}
+
+#texto{
+  color: black;
+}
+
+#senha2{
+    width: 450px;
+    height: 650px;
+    background-color: var(--bg-header);  
+    margin: 0 0 10px;
+    padding: 10px 0;
+    align-items: center;    
+}
+
+/* From uiverse.io */
+.c-button {
+  color: var(--bg-header);
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 0.9em 1.6em;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+ }
+ 
+ .c-button--gooey {
+  color: var(--bg-header);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 4px solid var(--bg-header);
+  border-radius: 0;
+  position: relative;
+  transition: all 700ms ease;
+ }
+ 
+ .c-button--gooey .c-button__blobs {
+  height: 100%;
+  filter: url(#goo);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -3px;
+  right: -1px;
+  z-index: -1;
+ }
+ 
+ .c-button--gooey .c-button__blobs div {
+  background-color: var(--bg-header);
+  width: 34%;
+  height: 100%;
+  border-radius: 100%;
+  position: absolute;
+  transform: scale(1.4) translateY(125%) translateZ(0);
+  transition: all 700ms ease;
+ }
+ 
+ .c-button--gooey .c-button__blobs div:nth-child(1) {
+  left: -5%;
+ }
+ 
+ .c-button--gooey .c-button__blobs div:nth-child(2) {
+  left: 30%;
+  transition-delay: 60ms;
+ }
+ 
+ .c-button--gooey .c-button__blobs div:nth-child(3) {
+  left: 66%;
+  transition-delay: 25ms;
+ }
+ 
+ .c-button--gooey:hover {
+  color: #fff;
+ }
+ 
+ .c-button--gooey:hover .c-button__blobs div {
+  transform: scale(1.4) translateY(0) translateZ(0);
+ }/* From uiverse.io */
+.c-button {
+  color: rgb(252, 252, 252);
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 0.9em 1.6em;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+ }
+ 
+ .c-button--gooey {
+  color: var(--bg-header);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 4px solid white;
+  border-radius: 0;
+  position: relative;
+  transition: all 700ms ease;
+ }
+ 
+ .c-button--gooey .c-button__blobs {
+  height: 100%;
+  filter: url(#goo);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -3px;
+  right: -1px;
+  z-index: -1;
+ }
+ 
+ .c-button--gooey .c-button__blobs div {
+  background-color: white;
+  width: 34%;
+  height: 100%;
+  border-radius: 100%;
+  position: absolute;
+  transform: scale(1.4) translateY(125%) translateZ(0);
+  transition: all 700ms ease;
+ }
+ 
+ .c-button--gooey .c-button__blobs div:nth-child(1) {
+  left: -5%;
+ }
+ 
+ .c-button--gooey .c-button__blobs div:nth-child(2) {
+  left: 30%;
+  transition-delay: 60ms;
+ }
+ 
+ .c-button--gooey .c-button__blobs div:nth-child(3) {
+  left: 66%;
+  transition-delay: 25ms;
+ }
+ 
+ .c-button--gooey:hover {
+  color: black;
+ }
+ 
+ .c-button--gooey:hover .c-button__blobs div {
+  transform: scale(1.4) translateY(0) translateZ(0);
+ }
