@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Balsamiq+Sans&family=Comfortaa:wght@300&family=Courgette&family=Grape+Nuts&family=Hubballi&family=Inter:wght@100;200;300&family=Oswald:wght@200&family=Roboto:wght@100&family=Rock+Salt&family=Send+Flowers&family=Source+Sans+Pro:wght@200&display=swap');
-@import "../src/DarkMode.css";
+@import "../../DarkMode.css";
 *{
     padding: 0px;
     margin: 0px;
@@ -243,3 +243,7 @@ img{
  .c-button--gooey:hover .c-button__blobs div {
   transform: scale(1.4) translateY(0) translateZ(0);
  }
+
+ .logoLogin {
+  height: 180px;
+}

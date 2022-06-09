@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from '../../Componentes/Header/Header'
+import Login from '../../Componentes/Login/Login'
 
 export default function PagesLogin() {
     return (
         <div className="App">
-            <Header />
+            <Login />
         </div>
     )
 }
