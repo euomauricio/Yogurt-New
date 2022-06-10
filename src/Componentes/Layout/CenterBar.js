@@ -16,6 +16,7 @@ export default function CenterBar() {
             setPublications(response.data);
         });
     }, []);
+    
     return (
         <div className="centerBar">
             <Post />

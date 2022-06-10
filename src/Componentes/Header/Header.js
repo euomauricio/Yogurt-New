@@ -13,7 +13,7 @@ export default function Header() {
             </div>
             <div className="headerRight">
 
-                <IconButton href="#link">
+                <IconButton >
                     <ForumIcon fontSize="large" alt="messages" className="SVG" id="messageSVG"></ForumIcon>
                 </IconButton>
 

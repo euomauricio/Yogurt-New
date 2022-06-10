@@ -13,7 +13,6 @@ export default function Post() {
                 width: "100%"
             }}
         >
-
             <div className="userBlockCOLLUM">
                 <div className="userBlockROW">
                     <AccountCircle />
