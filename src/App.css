@@ -226,19 +226,17 @@ input:checked+label::after {
 .comunidades{
   display: flex;
   flex-direction: row;
-  color: rgb(66, 53, 55);
+  color: var(--color-text);
   align-items:center;
   justify-content: flex-start;
   padding: 10px;
   
- 
 }
 
 .comunidades img{
   max-width: 30px;
   height: 30px;
 }
-
 
 
 .centerBar {
@@ -258,21 +256,20 @@ input:checked+label::after {
 .amizades{
   display: flex;
   flex-direction: row;
-  color: rgb(66, 53, 55);
+  color: var(--color-text);
   align-items:center;
   justify-content: flex-start;
   padding: 10px;
 }
 
 .amigos img{
-  
   max-width: 30px;
   height: 30px;
 }
 
 .disponivel{
-  max-width: 10px;
-  height: 10px;
+  max-width: 7px;
+  height: 7px;
   
 }
 
