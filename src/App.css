@@ -232,7 +232,6 @@ input:checked+label::after {
 
 
 
-
 /*Grid do feed*/
 
 .grid {
@@ -266,9 +265,7 @@ input:checked+label::after {
 .post {
   margin-top: 10px;
   background: var(--bg-card);
-  border-width: 1px;
-  border-style: solid;
-  border-color: var(--border-color);
+  box-shadow: 0 0 5px var(--border-color);
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -277,9 +274,7 @@ input:checked+label::after {
 .postFeed {
   margin-top: 10px;
   background: var(--bg-card);
-  border-width: 1px;
-  border-style: solid;
-  border-color: var(--border-color);
+  box-shadow: 0 0 5px var(--border-color);
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -374,4 +369,135 @@ input:checked+label::after {
 
 .comentariosDaPostagem {
   cursor: pointer;
+}
+
+
+
+
+/* PROFILE */
+
+.profile {
+  margin: 30px 20% 0% 20% ;
+
+}
+
+.bio {
+  margin-bottom: 15px;
+  padding: 20px;
+
+  height: 40vh;
+
+  display: flex;
+  flex-direction: row;
+
+  background: var(--bg-card);
+  box-shadow: 0 0 5px var(--border-color);
+  border-radius: 10px;
+}
+
+
+.imageBio {
+  background-image: url(https://res.cloudinary.com/dte7upwcr/image/upload/v1625827167/blog/blog2/melhorar-qualidade-de-imagem/melhorar-qualidade-de-imagem-foto-profissional.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.textBio {
+  margin-left: 45px;
+  width: 80%;
+}
+
+.names {
+  height: 110px;
+
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.nickName{
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+
+.btnConnect {
+  background-color: var(--color-buttonConect);
+  height: 40px;
+
+  display: none;
+
+}
+
+.btnConnect:hover {
+  filter: brightness(80%);
+}
+
+.btnConfig {
+  background-image: url(./Assets/settings.jpg);
+  background-position: center;
+  background-size: contain;
+
+  filter: var(--filter-buttonSettings);
+
+  width: 25px;
+  height: 25px;
+
+}
+
+.btnConfig:hover {
+  cursor: pointer;
+}
+
+
+
+/* CONFIG PROFILE */
+
+.componentes {
+  height: 75%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.divConfig {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 60vh;
+  width: 50vw;
+}
+
+.divConfig input {
+  padding: 3px;
+}
+
+.divConfig textarea {
+  resize: none;
+  padding: 3px;
+}
+
+
+@media only screen and (max-width: 700px) {
+  
+  .profile {
+    margin: 20px 3% 0% 3% ;
+
+  }
+
+  .divConfig {
+    display: flex;
+    flex-direction: column;
+  
+    height: 70vh;
+    width: 90vw;
+  }
+  
 }
