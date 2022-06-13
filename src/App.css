@@ -1,4 +1,5 @@
 @import "./DarkMode.css";
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Balsamiq+Sans&family=Comfortaa:wght@300&family=Courgette&family=Grape+Nuts&family=Hubballi&family=Inter:wght@100;200;300&family=Oswald:wght@200&family=Roboto:wght@100&family=Rock+Salt&family=Send+Flowers&family=Source+Sans+Pro:wght@200&display=swap');
 
 * {
   margin: 0;
@@ -220,6 +221,7 @@ input:checked+label::after {
   justify-content: flex-start;
   align-items: center;
   padding: 15px;
+  font-family: 'Inter', sans-serif;
    
 }
 
@@ -230,12 +232,15 @@ input:checked+label::after {
   align-items:center;
   justify-content: flex-start;
   padding: 10px;
+  cursor: pointer;
   
 }
 
 .comunidades img{
   max-width: 30px;
   height: 30px;
+  margin-right: 8px;
+ 
 }
 
 
@@ -251,6 +256,7 @@ input:checked+label::after {
   justify-content: flex-start;
   align-items: center;
   padding: 15px;
+  font-family: 'Inter', sans-serif;
 }
 
 .amizades{
@@ -260,16 +266,19 @@ input:checked+label::after {
   align-items:center;
   justify-content: flex-start;
   padding: 10px;
+  cursor: pointer;
 }
 
 .amigos img{
   max-width: 30px;
   height: 30px;
+  margin-right: 8px;
 }
 
 .disponivel{
   max-width: 7px;
   height: 7px;
+  margin-right: 5px;
   
 }
 
