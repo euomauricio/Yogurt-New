@@ -242,8 +242,27 @@ input:checked+label::after {
 .leftBar {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px;
+   
 }
+
+.comunidades{
+  display: flex;
+  flex-direction: row;
+  color: var(--color-text);
+  align-items:center;
+  justify-content: flex-start;
+  padding: 10px;
+  
+}
+
+.comunidades img{
+  max-width: 30px;
+  height: 30px;
+}
+
 
 .centerBar {
   display: flex;
@@ -254,7 +273,29 @@ input:checked+label::after {
 .rightBar {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px;
+}
+
+.amizades{
+  display: flex;
+  flex-direction: row;
+  color: var(--color-text);
+  align-items:center;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.amigos img{
+  max-width: 30px;
+  height: 30px;
+}
+
+.disponivel{
+  max-width: 7px;
+  height: 7px;
+  
 }
 
 
