@@ -14,7 +14,7 @@ const style = {
   p: 4,
 };
 
-export default function KeepMountedModal({nome, senha, foto}) {
+export default function KeepMountedModal({nome, cidade, foto}) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -34,8 +34,11 @@ export default function KeepMountedModal({nome, senha, foto}) {
                 <input id='foto' type="file" class="fupload" accept='image/*' />
 
                 <input id='nome' type="text" placeholder={nome}  />
-
-                <textarea id='descricao' maxlength="150" rows="3" columns="5" />
+                
+                <input id='city' type="text" placeholder={cidade}  />
+                
+                <label for="legenda">Descrição:</label>
+                <textarea id='legenda' name="legenda" maxlength="150" rows="3" columns="5" />
               </div>
               
 
