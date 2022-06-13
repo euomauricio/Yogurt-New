@@ -7,15 +7,7 @@ const setDark = () => {
   document.documentElement.setAttribute("data-theme", "dark");
 
 
-  //Recebemos dois valores por parâmetro.
-    
-    /*
-     document.getElementById: acessa um objeto na página através do atributo ID, tudo que tiver um identificador é um objeto e é através dele que vamos acessar.
-     (objeto): é dentro dos parenteses que informamos qual objeto acessar, neste exemplo o objeto será passado por parâmetro.
-     src: é abreviação de source, é o caminho da nova imagem.
-     = caminhoNovaImagem: Informa o diretório da nova imagem, como: c:/window/wallpaper.jpg
-     */
-  
+ 
   
 };
 

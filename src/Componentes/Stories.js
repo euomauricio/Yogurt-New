@@ -5,12 +5,12 @@ export default function Stories() {
 
 
 
-//Precisa fazer função de buscar stories no back
+  //Precisa fazer função de buscar stories no back
 
   function ChamarCardStory() {
-let foto = Leoncio;
-let storie = FotoDeUmDiaBom;
-let nome = 'Boliña de Gorfe'
+    let foto = Leoncio;
+    let storie = FotoDeUmDiaBom;
+    let nome = 'Boliña de Gorfe'
     return (
       <div class="item">
         <div class="bottom-left">
@@ -21,9 +21,12 @@ let nome = 'Boliña de Gorfe'
         </div>
         <img class="storie" src={storie} />
       </div>
-    )};
+    )
+  };
 
   return (
+
+
     <div class="wrapper">
 
       <section id="section1">
@@ -54,4 +57,5 @@ let nome = 'Boliña de Gorfe'
       </section>
 
     </div>
-)};
+  )
+};
