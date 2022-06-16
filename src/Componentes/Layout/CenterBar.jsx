@@ -1,5 +1,5 @@
 import React from 'react';
-import Post from '../PostAPost';
+import Post from '../Elementos/PostAPost/PostAPost';
 import PostFeed from '../Post/Feed/Feed';
 import useApi from '../../Hooks/useApi';
 

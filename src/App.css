@@ -4,10 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-
-
-
 }
 
 ::-webkit-scrollbar-track {
@@ -28,9 +24,6 @@
   background: rgb(37, 37, 37);
 }
 
-
-
-
 Body {
   background: var(--b-g);
 }
@@ -45,15 +38,15 @@ Body {
   z-index:1000;
   background-color: var(--bg-header);
   padding: 10px 0;
-  display: flex;
+  /* display: flex;
   justify-content: flex-end;
   position: sticky;
-  top: 0;
+  top: 0; */
 }
 
 .headerLeft {
   width: 20%;
-  display: flex;
+  /* display: flex; */
 }
 
 .logo {
@@ -68,10 +61,10 @@ Body {
 
 .headerRight {
   width: 70%;
-  display: flex;
+  /* display: flex;
   align-items: center;
 
-  justify-content: center;
+  justify-content: center; */
 }
 
 
@@ -205,13 +198,13 @@ input:checked+label::after {
   margin: 5%;
   width: 50px;
   height: 50px;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #4287f5;
+
+  border: 3px solid #4287f5;
   border-radius: 50%;
+  box-shadow: black 0.1em 0.1em 0.5em 0.1em;
+
   background-position: center;
   background-size: cover;
-  box-shadow: black 0.1em 0.1em 0.5em 0.1em;
   transition: transform .5s;
 }
 
@@ -222,6 +215,7 @@ input:checked+label::after {
 .stories-card p {
   color: #e6e6e6;
   font-size: 15px;
+
   text-shadow: black 0.1em 0.1em 0.2em;
   transition: transform .5s;
 }
@@ -240,21 +234,59 @@ input:checked+label::after {
 }
 
 .leftBar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 15px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: flex-start; */
+  /* align-items: center; */
+   
 }
 
-.centerBar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.comunidades{
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* align-items: center; */
+  /* justify-content: flex-start; */
+  color: var(--color-text);
+  padding: 10px;
 }
+
+.comunidades img{
+  max-width: 30px;
+  height: 30px;
+}
+
+/* .centerBar {
+   display: flex;
+  flex-direction: column;
+  justify-content: center; 
+} */
 
 .rightBar {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center; */
+  padding: 15px;
+}
+
+.amizades{
+  /* display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: flex-start; */
+  color: var(--color-text);
+  padding: 10px;
+}
+
+.amigos img{
+  max-width: 30px;
+  height: 30px;
+}
+
+.disponivel{
+  max-width: 7px;
+  height: 7px;
 }
 
 
@@ -267,8 +299,8 @@ input:checked+label::after {
   background: var(--bg-card);
   box-shadow: 0 0 5px var(--border-color);
   border-radius: 10px;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .postFeed {
@@ -276,90 +308,85 @@ input:checked+label::after {
   background: var(--bg-card);
   box-shadow: 0 0 5px var(--border-color);
   border-radius: 10px;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .userBlockROW {
   margin: 5px;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: center; */
 }
 
 .userBlockCOLLUM {
   width: 90%;
   margin: 5px;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-.textBox {
-  margin: 5px;
-}
-
-.infoPost {
-  margin: 0px;
-  padding: 0px;
+  justify-content: center; */
 }
 
 .buttonPost {
   padding-top: 5px;
-  display: flex;
-  justify-content: flex-end;
+  /* display: flex;
+  justify-content: flex-end; */
 }
 
 
 
 /*Postados*/
 
+.infoPost {
+  margin: 0px;
+  padding: 0px;
+}
 .conteudoDaPostagem {
   width: 100%;
   margin: 5px;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   overflow: hidden;
-}
+} 
 
 .midiaDaPostagem {
   margin-top: 20px;
   background-color: #000;
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 500px;
+  min-width: 500px; */
 }
 
 .reacoesDaPostagem {
   margin: 20px;
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
 }
-
+/* 
 .curtidasDaPostagem {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
+  align-items: center; 
+} */
 
 .like {
   cursor: pointer;
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
 }
 
 .dlike {
   margin-left: 10px;
   cursor: pointer;
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
 }
 
 .curtidasDaPostagem p {
@@ -387,8 +414,8 @@ input:checked+label::after {
 
   height: 40vh;
 
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
 
   background: var(--bg-card);
   box-shadow: 0 0 5px var(--border-color);
@@ -400,7 +427,7 @@ input:checked+label::after {
   background-image: url(https://res.cloudinary.com/dte7upwcr/image/upload/v1625827167/blog/blog2/melhorar-qualidade-de-imagem/melhorar-qualidade-de-imagem-foto-profissional.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
 
   height: 100px;
   width: 100px;
@@ -415,9 +442,9 @@ input:checked+label::after {
 .names {
   height: 110px;
 
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-content: space-around;
+  align-content: space-around; */
 }
 
 .nickName{
@@ -431,7 +458,7 @@ input:checked+label::after {
   height: 40px;
 
   display: none;
-
+  
 }
 
 .btnConnect:hover {
@@ -461,9 +488,9 @@ input:checked+label::after {
 .componentes {
   height: 75%;
 
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-around; */
 }
 
 .divConfig {

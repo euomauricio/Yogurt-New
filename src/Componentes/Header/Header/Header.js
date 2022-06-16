@@ -1,9 +1,9 @@
 import IconButton from '@mui/material/IconButton';
 import ForumIcon from '@mui/icons-material/Forum';
-import Busca from './Busca'
-import Logo from './Logo'
-import MiniMenu from '../../Componentes/MiniMenu'
-import Notify from '../Notify'
+import Busca from '../Busca/Busca'
+import Logo from '../Logo/Logo'
+import MiniMenu from '../../Elementos/MiniMenu/MiniMenu'
+import Notify from '../../Elementos/Notify/Notify'
 export default function Header() {
     return (
 

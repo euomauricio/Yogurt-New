@@ -1,9 +1,9 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import AccountCircle from '@mui/icons-material/AccountCircle'
+import AccountCircle from '@mui/icons-material/AccountCircle';
 import Button from '@mui/material/Button';
-
+import './PostAPost.css';
 
 export default function Post() {
     return (

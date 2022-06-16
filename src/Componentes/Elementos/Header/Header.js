@@ -7,6 +7,7 @@ import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import Busca from './Busca'
 import Logo from './Logo'
+import './Header.css'
 
 export default function Header() {
     return (

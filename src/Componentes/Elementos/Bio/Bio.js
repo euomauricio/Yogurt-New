@@ -1,4 +1,4 @@
-import ConfigProfile from './ConfigProfile'
+import ConfigProfile from '../ConfigProfile/ConfigProfile'
 
 export default function Bio({id, nickName, nameUser, biografia}) {
     return (

@@ -11,9 +11,8 @@ import PersonAdd from '@mui/icons-material/PersonAdd';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
 import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp';
-import DarkMode from '../DarkMode.tsx'
+import DarkMode from '../../../DarkMode.tsx'
 import FormControlLabel from '@mui/material/FormControlLabel';
-import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 
 
 export default function MiniMenu() {
@@ -28,22 +27,22 @@ export default function MiniMenu() {
     return (
         <React.Fragment>
             <Box sx={{ zIndex: '9999', display: 'flex', alignItems: 'center', textAlign: 'center' }}>
-                <Tooltip title="Notificações">
+                <Tooltip title="Perfil e configurações">
                     <IconButton
                         onClick={handleClick}
                         size="medium"
                         sx={{ ml: 2 }}
-                        aria-controls={open ? 'notifications' : undefined}
+                        aria-controls={open ? 'account-menu' : undefined}
                         aria-haspopup="true"
                         aria-expanded={open ? 'true' : undefined}
                     >
-                        <NotificationsActiveIcon fontSize="large" alt="profile" className="SVG" id="userSVG"></NotificationsActiveIcon>
+                        <AccountCircleSharpIcon fontSize="large" alt="profile" className="SVG" id="userSVG"></AccountCircleSharpIcon>
                     </IconButton>
                 </Tooltip>
             </Box>
             <Menu
                 anchorEl={anchorEl}
-                id="notifications"
+                id="account-menu"
                 open={open}
                 onClose={handleClose}
                 PaperProps={{
@@ -77,29 +76,29 @@ export default function MiniMenu() {
             >
 
                 <MenuItem>
-                    <Avatar fontSize="small" /> Joãozinho curtiu sua publicação
+
+                    <Avatar /> Minha conta
                 </MenuItem>
                 <Divider />
-                <MenuItem>
-                    <Avatar fontSize="small" /> Joãozinho curtiu sua publicação
+
+                <MenuItem >
+                    <ListItemIcon>
+                        <DarkMode />
+                    </ListItemIcon>
+                    Tema
                 </MenuItem>
-                <Divider />
                 <MenuItem>
-                    <Avatar fontSize="small" /> Joãozinho curtiu sua publicação
+                    <ListItemIcon>
+                        <Settings fontSize="small" />
+                    </ListItemIcon>
+                    Configurações
                 </MenuItem>
-                <Divider />
                 <MenuItem>
-                    <Avatar fontSize="small" /> Andrezinho curtiu sua publicação
+                    <ListItemIcon>
+                        <Logout fontSize="small" />
+                    </ListItemIcon>
+                    Logout
                 </MenuItem>
-                <Divider />
-                <MenuItem>
-                    <Avatar fontSize="small" /> Marcelinho curtiu sua publicação
-                </MenuItem>
-                <Divider />
-                <MenuItem>
-                    <Avatar fontSize="small" /> Cristininha curtiu sua publicação
-                </MenuItem>
-               
             </Menu>
         </React.Fragment>
     );

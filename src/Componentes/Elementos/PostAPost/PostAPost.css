@@ -1,0 +1,50 @@
+
+.post {
+    margin-top: 10px;
+    background: var(--bg-card);
+    box-shadow: 0 0 5px var(--border-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .postFeed {
+    margin-top: 10px;
+    background: var(--bg-card);
+    box-shadow: 0 0 5px var(--border-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .userBlockROW {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .userBlockCOLLUM {
+    width: 90%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .textBox {
+    margin: 5px;
+  }
+  
+  .infoPost {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .buttonPost {
+    padding-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  

@@ -1,6 +1,6 @@
-import Post from '../PostAPost'
-import PostFeed from '../PostFeed'
-import Bio from '../Bio'
+import Post from '../../PostAPost'
+import PostFeed from '../../PostFeed'
+import Bio from '../../Bio'
 
 export default function Profile() {
     return (

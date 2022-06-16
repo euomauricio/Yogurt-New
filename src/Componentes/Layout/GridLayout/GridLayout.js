@@ -1,7 +1,7 @@
-import LeftBar from './LeftBar'
-import CenterBar from './CenterBar'
-import RightBar from './RightBar'
-
+import LeftBar from '../LeftBar/LeftBar'
+import CenterBar from '../CenterBar'
+import RightBar from '../RightBar/RightBar'
+import './GridLayout.css'
 
 
 export default function Grid() {
@@ -10,7 +10,6 @@ export default function Grid() {
             <LeftBar />
             <CenterBar />
             <RightBar />
-            
         </div>
     )
 }

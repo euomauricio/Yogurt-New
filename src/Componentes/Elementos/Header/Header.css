@@ -1,0 +1,33 @@
+
+.header {
+    z-index:1000;
+    background-color: var(--bg-header);
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+  }
+  
+  .headerLeft {
+    width: 20%;
+    display: flex;
+  }
+  
+  .logo {
+    width: 133px;
+    height: 70px;
+  }
+  
+  .logoSrc {
+    max-height: 100%;
+    content: var(--logo-src);
+  }
+  
+  .headerRight {
+    width: 70%;
+    display: flex;
+    align-items: center;
+  
+    justify-content: center;
+  }
