@@ -29,24 +29,63 @@ Body {
 }
 
 
+.d_flex {
+  display: flex;
+}
 
+.f_column {
+  flex-direction: column;
+}
+
+.f_row {
+  flex-direction: row;
+}
+
+.justify_content_end {
+  justify-content: flex-end;
+}  
+
+.justify_content_start {
+  justify-content: flex-start;
+}
+
+.justify_content_center {
+  justify-content: center;
+}  
+
+.justify_content_spacebetween {
+  justify-content: space-between;
+}  
+
+.justify_content_spacearound {
+  justify-content: space-around;
+}  
+
+.d_flex_center {
+  justify-content: flex-start;
+}  
+
+.align_items_center {
+  align-items: center;
+} 
+
+.align_content_spacearound {
+  align-content: space-around;
+}
 
 
 /*Header*/
 
 .header {
-  z-index:1000;
+  z-index: 1000;
   background-color: var(--bg-header);
   padding: 10px 0;
-  /* display: flex;
-  justify-content: flex-end;
   position: sticky;
-  top: 0; */
+  top: 0;
 }
 
 .headerLeft {
   width: 20%;
-  /* display: flex; */
 }
 
 .logo {
@@ -61,10 +100,6 @@ Body {
 
 .headerRight {
   width: 70%;
-  /* display: flex;
-  align-items: center;
-
-  justify-content: center; */
 }
 
 
@@ -235,18 +270,9 @@ input:checked+label::after {
 
 .leftBar {
   padding: 15px;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: flex-start; */
-  /* align-items: center; */
-   
 }
 
 .comunidades{
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* align-items: center; */
-  /* justify-content: flex-start; */
   color: var(--color-text);
   padding: 10px;
 }
@@ -256,17 +282,7 @@ input:checked+label::after {
   height: 30px;
 }
 
-/* .centerBar {
-   display: flex;
-  flex-direction: column;
-  justify-content: center; 
-} */
-
 .rightBar {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center; */
   padding: 15px;
 }
 
@@ -299,8 +315,6 @@ input:checked+label::after {
   background: var(--bg-card);
   box-shadow: 0 0 5px var(--border-color);
   border-radius: 10px;
-  /* display: flex;
-  justify-content: center; */
 }
 
 .postFeed {
@@ -308,30 +322,19 @@ input:checked+label::after {
   background: var(--bg-card);
   box-shadow: 0 0 5px var(--border-color);
   border-radius: 10px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 .userBlockROW {
   margin: 5px;
-  /* display: flex;
-  flex-direction: row;
-  align-items: center; */
 }
 
 .userBlockCOLLUM {
   width: 90%;
   margin: 5px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
 }
 
 .buttonPost {
   padding-top: 5px;
-  /* display: flex;
-  justify-content: flex-end; */
 }
 
 
@@ -345,48 +348,26 @@ input:checked+label::after {
 .conteudoDaPostagem {
   width: 100%;
   margin: 5px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   overflow: hidden;
 } 
 
 .midiaDaPostagem {
   margin-top: 20px;
   background-color: #000;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 500px; */
+  min-width: 500px; 
 }
 
 .reacoesDaPostagem {
   margin: 20px;
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
 }
-/* 
-.curtidasDaPostagem {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; 
-} */
 
 .like {
   cursor: pointer;
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
 }
 
 .dlike {
   margin-left: 10px;
   cursor: pointer;
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
 }
 
 .curtidasDaPostagem p {
@@ -414,9 +395,6 @@ input:checked+label::after {
 
   height: 40vh;
 
-  /* display: flex;
-  flex-direction: row; */
-
   background: var(--bg-card);
   box-shadow: 0 0 5px var(--border-color);
   border-radius: 10px;
@@ -441,10 +419,6 @@ input:checked+label::after {
 
 .names {
   height: 110px;
-
-  /* display: flex;
-  flex-direction: column;
-  align-content: space-around; */
 }
 
 .nickName{
@@ -487,10 +461,6 @@ input:checked+label::after {
 
 .componentes {
   height: 75%;
-
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-around; */
 }
 
 .divConfig {

@@ -3,15 +3,12 @@
     z-index:1000;
     background-color: var(--bg-header);
     padding: 10px 0;
-    display: flex;
-    justify-content: flex-end;
     position: sticky;
     top: 0;
   }
   
   .headerLeft {
     width: 20%;
-    display: flex;
   }
   
   .logo {

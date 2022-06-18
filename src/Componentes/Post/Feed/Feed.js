@@ -16,31 +16,31 @@ export default function PostFeed({publication}) {
     console.log(publication)
 
     return (
-        <div className="postFeed">
+        <div className="postFeed d_flex justify_content_center align_items_center">
 
 
-            <div className="userBlockCOLLUM">
-                <div className="userBlockROW">
+            <div className="userBlockCOLLUM d_flex f_column justify_content_center">
+                <div className="userBlockROW d_flex f_row align_items_center">
                     <AccountCircle />
-                    <div className="userBlockCOLLUM">
+                    <div className="userBlockCOLLUM d_flex f_column justify_content_center">
                         <h5 className="infoPost">{nome}</h5>
                         <h6 className="infoPost">{data}</h6>
                     </div>
                 </div>
-                <div className="conteudoDaPostagem">
+                <div className="conteudoDaPostagem d_flex f_column justify_content_center align_items_center">
                     <div className="textoDaPostagem">
                         <p>{publication.legenda}</p>
                     </div>
-                    <div className="midiaDaPostagem">
+                    <div className="midiaDaPostagem d_flex justify_content_center align_items_center">
                           <img src={publication.arquivos[0]?.conteudo} />
                     </div>
-                    <div className="reacoesDaPostagem">
-                        <div className="curtidasDaPostagem">
-                            <div className="like">
+                    <div className="reacoesDaPostagem d_flex justify_content_spacebetween align_items_center">
+                        <div className="d_flex justify_content_spacebetween align_items_center">
+                            <div className="like d_flex justify_content_spacebetween align_items_center">
                                 <ThumbUpOffAltIcon />
                                 <p>{publication.curtidas}</p>
                             </div>
-                            <div className="dlike">
+                            <div className="dlike d_flex justify_content_spacebetween align_items_center">
                                 <ThumbDownOffAltIcon />
                                 <p>{publication.curtidas}</p>
                             </div>

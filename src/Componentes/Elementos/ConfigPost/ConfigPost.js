@@ -29,8 +29,8 @@ export default function KeepMountedModal({nome, cidade, foto}) {
             aria-labelledby="keep-mounted-modal-title"
             aria-describedby="keep-mounted-modal-description"
         >
-            <Box sx={style} className="divConfig componentes">
-              <div className='componentes'>
+            <Box sx={style} className="divConfig componentes d_flex f_column justify_content_spacearound">
+              <div className='componentes d_flex f_column justify_content_spacearound'>
                 <input id='foto' type="file" class="fupload" accept='image/*' />
 
                 <input id='nome' type="text" placeholder={nome}  />

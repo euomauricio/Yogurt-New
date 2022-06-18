@@ -6,12 +6,11 @@ import MiniMenu from '../../Elementos/MiniMenu/MiniMenu'
 import Notify from '../../Elementos/Notify/Notify'
 export default function Header() {
     return (
-
-        <div className="header">
-            <div className="headerLeft">
+        <div className="header d_flex justify_content_end">
+            <div className="headerLeft d_flex">
                 <Logo />
             </div>
-            <div className="headerRight">
+            <div className="headerRight d_flex d_align_center">
 
                 <IconButton >
                     <ForumIcon fontSize="large" alt="messages" className="SVG" id="messageSVG"></ForumIcon>
